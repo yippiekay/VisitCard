@@ -1,0 +1,11 @@
+<h2 style="text-align:center">Visit Card</h2>
+
+<div class="card">
+  <div class="container">
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="John" style="width:100%">
+    <h1>{{visitCard.firstName}} {{visitCard.lastName}}</h1>
+    <p class="title">{{visitCard.position}}</p>
+    <p><button [disabled]="isLoading" (click)="goToCreatePage()">Update</button></p>
+  </div>
+
+</div>

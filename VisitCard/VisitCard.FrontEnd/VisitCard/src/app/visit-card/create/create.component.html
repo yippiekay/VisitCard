@@ -1,0 +1,36 @@
+<h2 style="text-align:center">Visit Card</h2>
+<div class="card">
+  <div class="container">
+    <div class="form-inline">
+      <div class="form-group">
+        <div>
+          <label>First Name</label>
+        </div>
+        <div>
+          <label>
+            <input class="form-control" [(ngModel)]="visitCard.firstName"/>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div>
+          <label>Last Name</label>
+        </div>
+        <label>
+          <input class="form-control" [(ngModel)]="visitCard.lastName"/>
+        </label>
+      </div>
+      <div class="form-group">
+        <div>
+          <label>Position</label>
+        </div>
+        <label>
+          <input class="form-control" [(ngModel)]="visitCard.position"/>
+        </label>
+      </div>
+      <div class="form-group">
+          <p><button [disabled]="isLoading" (click)="updateCard()">Save</button></p>
+      </div>
+    </div>
+  </div>
+</div>
